@@ -1,0 +1,95 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="projects">
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-title-container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Here are some of my projects that I built:</p>
+            </div>
+
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <!--           Project image and alt for revision             -->
+                        <img src="/images/project01.jpg" alt="Mayette's Rice Store and Bakery Supplies">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <!--         Project Title, Description and href link for revision         -->
+                        <h3 class="project-title">Mayette's Rice Store and Bakery Supplies</h3>
+                        <p class="project-description">An E-commerce API using Spring Boot which includes the creation of products, product categories, cart, and placement of orders made by the user. This also includes user registration, authentication and authorization so that all customers and store employees can utilize the web application. Data is stored using a relational database and can be deployed in the cloud.
+                        </p>
+
+                        <h5 style="margin-bottom: 15px;">Skills Applied:</h5>
+
+                        <div class="project-tags">
+                            <span class="project-tag">Spring Boot</span>
+                            <span class="project-tag">Spring Security</span>
+                            <span class="project-tag">Spring Data JPA</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Lombok</span>
+                            <span class="project-tag">AWS</span>
+                            <span class="project-tag">Postman</span>
+                            <span class="project-tag">Swagger</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/dpba0224/mayette_ricestore_springboot_app" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <!--           Project image and alt for revision             -->
+                        <img src="/images/project02.png" alt="udemy">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <!--         Project Title, Description and href link for revision         -->
+                        <h3 class="project-title">SKY Perfumes</h3>
+                        <p class="project-description">A Full-Stack Application which includes the E-commerce API using the MERN Stack (MongoDB, Express.js, React.js, Node.js)</p>
+
+                        <h5 style="margin-bottom: 15px;">Skills Applied:</h5>
+
+                        <div class="project-tags">
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Bootstrap</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Postman</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://b256-abrugena-appecommerce-6t2vusegk-sky-perfumes.vercel.app" class="project-link" target="_blank">
+                                <i class="fa-solid fa-link"></i> View Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <!--           Project image and alt for revision             -->
+                        <img src="/images/projectcs.jpg" alt="coming soon">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <!--         Project Title, Description and href link for revision         -->
+                        <h3 class="project-title">Coming Soon!</h3>
+                        <p class="project-description">Will fill up the details of the project once done.</p>
+                        <div class="project-links">
+                            <a href="" class="project-link" target="_blank">
+                                <i class="fa-solid fa-link"></i> View Link
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</th:block>
+</html>

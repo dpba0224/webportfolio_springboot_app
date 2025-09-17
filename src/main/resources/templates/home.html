@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧑‍💻 David Polo B. Abrugena</title>
+
+    <!--  CSS file references  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <!--  Thymeleaf fragments  -->
+    <!--  th:relace="~{{directory} :: {th:fragment_name}}"  -->
+    <div th:replace="~{fragments/entry :: entry}"></div>
+
+    <!--  Header Section  -->
+    <div th:replace="~{fragments/header :: header}"></div>
+
+    <!--  person Section -->
+    <div th:replace="~{fragments/person :: person}"></div>
+
+    <!--  About Section -->
+    <div th:replace="~{fragments/about :: about}"></div>
+
+    <!--  Experience Section -->
+    <div th:replace="~{fragments/experience :: experience}"></div>
+
+    <!--  Projects Section -->
+    <div th:replace="~{fragments/projects :: projects}"></div>
+
+    <!--  Achievements Section -->
+    <!-- <div th:replace="~{fragments/achievements :: achievements}"></div>-->
+
+    <!--  Contact Section -->
+    <div th:replace="~{fragments/contact :: contact}"></div>
+
+    <!--  Footer Section -->
+    <div th:replace="~{fragments/footer :: footer}"></div>
+
+    <!--  Graphics  -->
+    <div class="graphic-shapes shape-1"></div>
+    <div class="graphic-shapes shape-2"></div>
+    <div class="graphic-shapes shape-3"></div>
+
+    <!--  Customized script  -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
